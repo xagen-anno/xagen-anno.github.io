@@ -564,10 +564,13 @@
                     </tr>
             </tbody>
         </table>
-        <p class="caption" style="margin-bottom: 1px; text-align: center">
+        <!-- <p class="caption" style="margin-bottom: 1px; text-align: center">
             Text-guided synthesis results of XAGen with multi-view appearance and geometry. We optimize the latent code $\mathbf{z}$ by minimizing the distance between the image and the given text prompt. 
             Please refer to Section 4.3 for more details.
-        </p>
+        </p> -->
+        <div style="width: 92%; text-align: center;  margin:auto;">
+            <img style="width:100%" src="./assets/textcaption.png">
+        </div>
         </div>
     </section>
     <section class="section">
@@ -644,9 +647,12 @@
         <div style="width: 90%; text-align: center; margin:auto;">
             <img style="width:100%" src="./assets/Network.png">
         </div>
-        <p>Pipeline of XAGen. Given a random noise $\mathbf{z}$, the canonical generator synthesizes the avatar in the format of canonical multi-part and multi-scale Tri-planes given the corresponding camera pose $c_\text{b}$. 
+        <!-- <p>Pipeline of XAGen. Given a random noise $\mathbf{z}$, the canonical generator synthesizes the avatar in the format of canonical multi-part and multi-scale Tri-planes given the corresponding camera pose $c_\text{b}$. 
             We then deform the canonical avatar under the guidance of control parameters $p_\text{*}$ to render multi-part images using respective camera poses $c_\text{*}$ and upsample the images using a super-resolution module. Discriminators encode the output images, camera poses, and control parameters into real or fake probabilities to critique the rendered images. IS represents inverse skinning.
-        </p>
+        </p> -->
+        <div style="width: 96%; text-align: center;  margin:auto;">
+            <img style="width:100%" src="./assets/pipelinecaption.png">
+        </div>
     </section>
 
     <section class="section">
